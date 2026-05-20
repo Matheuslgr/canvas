@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Demo Canvas</title>
+  <link rel="stylesheet" href="../src/css/demo.css" />
+</head>
+<body>
+  <header>
+    <div class="controls">
+      <button id="toggleAnim">⏸ Pausar</button>
+      <button id="clear">🗑 Limpar desenho</button>
+      <label>
+        🎨 Cor:
+        <input id="color" type="color" value="#ff6b6b" />
+      </label>
+    </div>
+    <div class="header-info">Animação com Canvas • Desenhe com o mouse</div>
+  </header>
+
+  <main>
+    <canvas id="c" width="800" height="500"></canvas>
+  </main>
+
+  <footer>
+    ← Arraste para desenhar • Botões para controlar animação e limpeza →
+  </footer>
+
+  <script src="../src/js/demo.js"></script>
+</body>
+</html>

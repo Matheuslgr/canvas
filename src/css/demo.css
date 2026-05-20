@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #eee;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 20px 24px;
+  background: linear-gradient(90deg, #0f3460 0%, #16213e 100%);
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: 0;
+  background: linear-gradient(135deg, #e94560 0%, #d63447 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(233, 69, 96, 0.3);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(233, 69, 96, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+input[type="color"] {
+  width: 50px;
+  height: 40px;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.header-info {
+  color: #a0a0c0;
+  font-size: 13px;
+  margin-left: auto;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+canvas {
+  display: block;
+  background: linear-gradient(135deg, #0b1220 0%, #1a2332 100%);
+  border: 3px solid #e94560;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 8px 24px rgba(233, 69, 96, 0.2), inset 0 1px 3px rgba(255, 255, 255, 0.1);
+}
+
+footer {
+  padding: 16px 24px;
+  background: rgba(15, 52, 96, 0.5);
+  text-align: center;
+  color: #a0a0c0;
+  font-size: 13px;
+  border-top: 1px solid rgba(233, 69, 96, 0.2);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .controls {
+    width: 100%;
+  }
+
+  .header-info {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  canvas {
+    max-width: 100%;
+    border-width: 2px;
+  }
+}
