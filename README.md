@@ -38,5 +38,3 @@ O que a demo mostra:
 - Para projetos com muitos objetos interativos, bibliotecas como PixiJS ou frameworks de jogos aceleram o desenvolvimento e melhoram o desempenho.
 
 ---
-
-Se quiser, eu gero slides em PDF exportáveis ou adiciono explicações por slide em `index.html`.
